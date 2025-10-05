@@ -39,7 +39,6 @@ export const NavBar = () => {
 
               {/* Mobile Menu */}
  
-
         </div>
       </div>
     </div>
