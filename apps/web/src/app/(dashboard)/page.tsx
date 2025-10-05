@@ -33,7 +33,7 @@ const LandingPage = () => {
 
           <div className="mt-10 flex flex-col md:flex-row w-full items-center justify-center gap-10">
           {/* Card 1 */}
-          <div className="max-w-md bg-black shadow-md rounded-2xl p-6 text-center border border-gray-200 hover:shadow-lg transition">
+          <div className="max-w-md bg-gray-300 shadow-md rounded-2xl p-6 text-center border border-gray-200 hover:shadow-lg transition">
             <h2 className="text-xl font-semibold text-green-600 mb-3">
               For Students (Earn Side)
             </h2>
@@ -44,11 +44,11 @@ const LandingPage = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="max-w-md bg-black shadow-md rounded-2xl p-6 text-center border border-gray-200 hover:shadow-lg transition">
+          <div className="max-w-md bg-gray-300 shadow-md rounded-2xl p-6 text-center border border-gray-200 hover:shadow-lg transition">
             <h2 className="text-xl font-semibold text-green-600 mb-3">
               For Users / Clients
             </h2>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-black leading-relaxed">
               Get genuine information about colleges directly from current
               students no agencies, no filters, just real voices.
             </p>

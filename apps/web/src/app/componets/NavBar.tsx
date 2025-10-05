@@ -2,7 +2,6 @@
 import { useState } from 'react'
 import React from 'react'
 
-
 export const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false); 
   return (
@@ -27,7 +26,6 @@ export const NavBar = () => {
               <span>Get Started</span>
             </div>
           </div>
-
 
             <button
             className='md:hidden text-2xl focus:outline-none'

@@ -1,6 +1,8 @@
 "use client";
-import { Mail, MessageSquare, Send, User } from 'lucide-react';
+import { Axis3DIcon, Mail, MessageSquare, Send, User } from 'lucide-react';
 import { useState } from 'react'
+import axios from 'axios';
+import { SEGMENT_EXPLORER_SIMULATED_ERROR_MESSAGE } from 'next/dist/next-devtools/userspace/app/segment-explorer-node';
 
 export default function  WaitlistForm(){
     const [form, setForm] = useState({name: "", role: "", email: ""});
@@ -14,9 +16,15 @@ export default function  WaitlistForm(){
     const handleSubmit = async (e:any) => {
         e.preventDefault();
 
-        console.log(form)
+        try { 
 
+        const res = await axios.post("/api/waitlist", form)
+        const  data = res.data; 
 
+        if(data.success) setForm({name: "" , role: "" , email: ""});
+        } catch(e) {
+          console.log("error", e); 
+        }
     }
 
     return(
@@ -74,9 +82,7 @@ export default function  WaitlistForm(){
                 </div>
               </div>
 
-         
-
-               <div>
+             <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                   Role
                 </label>
