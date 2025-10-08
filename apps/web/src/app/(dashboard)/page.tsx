@@ -1,5 +1,5 @@
 import React from "react";
-import WaitlistForm from "../componets/WishList";
+import WaitlistForm from "../componets/WaitList";
 const LandingPage = () => {
   return (
     <section className="flex justify-center mt-10 px-6 py-16">

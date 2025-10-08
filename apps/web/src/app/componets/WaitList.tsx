@@ -2,7 +2,6 @@
 import { Axis3DIcon, Mail, MessageSquare, Send, User } from 'lucide-react';
 import { useState } from 'react'
 import axios from 'axios';
-import { SEGMENT_EXPLORER_SIMULATED_ERROR_MESSAGE } from 'next/dist/next-devtools/userspace/app/segment-explorer-node';
 
 export default function  WaitlistForm(){
     const [form, setForm] = useState({name: "", role: "", email: ""});
